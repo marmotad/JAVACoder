@@ -1,4 +1,4 @@
-package git.fanyang.zone;
+package git.cncf.online;
 
 import java.util.Arrays;
 
@@ -29,7 +29,6 @@ public class homework6 {
             short a = (short) (i / 100);
             short b = (short) (i % 100 / 10);
             short c = (short) (i % 100 % 10);
-            short outmum;
             short outnum = (short) ((a * a * a) + (b * b * b) + (c * c * c));
             if (outnum == i) {
                 System.out.println(i);
