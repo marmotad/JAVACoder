@@ -39,19 +39,30 @@ public class homework6 {
         for (byte i = 1; i <= 9; i++) {
             System.out.println("\t");
             for (byte j = 1; j <= 9; j++) {
-                if (j > i ) {
-                   // System.out.println("\t");
+                if (j > i) {
+                    // System.out.println("\t");
                     continue;
                 }
-                System.out.print(j + " * " + i + "=" + j * i);
+                System.out.print(j + " * " + i + " = " + j * i);
                 System.out.print("\t");
             }
         }
         //打印99乘法表
-        String str = "*";
-        for (byte i = 1; i < 13; i += 2 ) {
-            System.out.println("\t" + str);
 
+
+        System.out.println();
+        //打印空行和上面代码做区分
+
+        for(int i=1;i<=5;i++){
+            //参考地址  https://www.runoob.com/w3cnote/java-print-the-triangle.html
+            //控制打印的行数
+            for(int j=5; i<=j; j--)
+                System.out.print("#");
+            for(int j=1; j<=i; j++)
+                System.out.print("*");
+            for(int j=1; j<i; j++)
+                System.out.print("*");
+            System.out.println();
         }
     }
 }
