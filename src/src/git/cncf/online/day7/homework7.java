@@ -28,10 +28,6 @@ public static void main(String[] args) {
             c = ints[2];
             d = ints[3];
 
-            for (a )
-
-
-
 
             /*
             System.out.print(ints[i]);
