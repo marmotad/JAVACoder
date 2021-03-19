@@ -28,6 +28,12 @@ public static void main(String[] args) {
             c = ints[2];
             d = ints[3];
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> f942bc00ed82689ad18274dd3126c75033c7bf3f
 
             /*
             System.out.print(ints[i]);
