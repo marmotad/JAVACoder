@@ -2,7 +2,7 @@ package git.cncf.online.day9;
 
 public class age {
     private int age ;
-    public void setA(int this.age){
+    public void setA(int age){
         if (this.age > 0) {
             this.age = age;
         } else {
