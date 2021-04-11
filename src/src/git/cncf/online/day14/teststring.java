@@ -28,6 +28,7 @@ public class teststring {
 //        2 进行直接赋值=======堆中 不同于new的对象的空间   字符串常量池
 
         String s = "++++http:/  /abcdefa.txt+++  ";
+        String s2 = "++++http:/  /abcdefa.TXT+++  ";
 //        调用方法 查看方法功能
 //        可以获取指定索引位置上的数据
         char a = s.charAt(0);
@@ -82,5 +83,29 @@ public class teststring {
         System.out.println(s.replaceAll("a","QQ"));
         System.out.println(s.replaceFirst("a","QQ"));
         System.out.println();
+//Sting 类重写了equals方法，进行值比较
+        System.out.println((s.equals(s2)));
+        //不区分大小写比较
+        System.out.println((s.equalsIgnoreCase(s2)));
+        //调用方法 原来字符串的内容不变
+        //String 一旦创建对象 值不变
+        //final 修饰的数据 不可修改
+        //字符串 通过一个final修饰的chr数组进行的数据存储
+        //String
+        System.out.println(s);
+
+        StringBuilder strs1 = new StringBuilder("123");
+        //打印字符串容量
+        System.out.println(strs1.capacity());
+        //在字符串结尾插入
+        System.out.println(strs1.append("a"));
+        //在字符串开始位置插入
+        System.out.println(strs1.insert(0, "#"));
+        //删除字符串
+        System.out.println(strs1.delete(0,1));
+        //修改字符串
+        System.out.println(strs1.replace(0,3,"XC"));
+        //反转
+        System.out.println(strs1.reverse());
     }
 }
