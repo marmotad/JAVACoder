@@ -39,6 +39,13 @@ public class WriteFile {
         }
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                input.close();
+                out.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
